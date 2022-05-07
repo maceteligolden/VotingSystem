@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time voting</title>
+
+          <!--Import Google Icon Font-->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <!--Import materialize.css-->
+          <link type="text/css" rel="stylesheet" href="css/ma4terialize.min.css"  media="screen,projection"/>
+    
+          <!--Let browser know website is optimized for mobile-->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+    <div class="container">
+        <h1>OS Vote</h1>
+        <p> Vote for your favourite OS to develop on</p>
+        <form id="vote-form">
+            <p>
+                <input type="radio" name="os" id="windows" value="Windows">
+                <label for="windows">Windows</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="macos" value="MacOS">
+                <label for="macos">MacOS</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="linux" value="Linux">
+                <label for="linux">Linux Distro</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="other" value="Other">
+                <label for="other">Something Else</label>
+            </p>
+
+            <input type="submit" value="Vote" class="btn">
+
+        </form>
+
+
+        <br><br>
+
+        <div id="chartContainer" style="height: 300px; width: 100%">
+
+        </div>
+    </div>
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.1.0-beta/pusher.min.js" integrity="sha512-ip+AkQVjdc/LkqydhtKwtDoguZusmE5wTMCZPFov/+t4nQyFb6ahAmXg4dNKBEgYIB4uZ04JI7i4RN3E5uJ1Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
