@@ -24,11 +24,17 @@ A realtime voting system
 clone the repo
 
 ```
-git pull https://bitbucket.org/devcanoe/backend/src/'main'
+git pull https://github.com/maceteligolden/VotingSystem.git
 ```
 
 install npm 
 
 ```
 npm install
+```
+
+Start Server
+
+```
+npm run serve
 ```
